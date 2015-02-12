@@ -13,9 +13,9 @@ then
     
     #if nsmb.conf file exists then check if smb1 is forced already
     if [ `/usr/bin/grep -wq "smb_neg=smb1_only" $nsmb_file` ]
+    then
         #smb_neg=smb1_only already exists.  Exit.
         exit 0
-    then
     else
         #if not then check if the default header exists
         if [ `/usr/bin/grep -wq "\[default]" $nsmb_file` ]
