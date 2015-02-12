@@ -1,4 +1,5 @@
 #!/bin/bash
+# Source versioned at https://github.com/poundbangbash/nsmb_force_smb1
 nsmb_file=/etc/nsmb.conf
 
 #Check if the nsmb.conf file exists
